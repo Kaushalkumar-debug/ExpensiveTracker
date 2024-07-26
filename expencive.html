@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenciveTracker</title>
+    <link rel="stylesheet"href="expencive.css">
+</head>
+<body>
+    <div class="expencive-container">
+        <form id="expenseForm"></form>
+        <h1>Expencive Tracker</h1>
+                <input type="text"id="description"placeholder="expencive description">
+        <select id="catogary"required>
+            <option value="Select Category">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transporatation">Transporatation</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Others">Others</option>
+        </select>
+        <input type="text"id="amount"placeholder="Amount">
+       <input type="submit"value="Add Expensive">
+       <h1>Expense Summary</h1>
+       <table id="expenseTable">
+        <thead>
+        <th>
+            <td>Description</td>
+            <td>Category</td>
+            <td>Amount</td>
+        </th>
+    </thead>
+    <tbody id="expenseList">
+    </tbody>
+       </table>
+    </form>
+    </div>
+    <script src="expencive.js"></script>
+</body>
+</html>
